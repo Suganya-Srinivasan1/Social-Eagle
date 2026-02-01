@@ -1,0 +1,56 @@
+Free text prompt:
+A hyper-maximalist solar system masterpiece, 
+Planets connected by translucent, shimmering orbital threads,
+planets rendered as follows
+Sun as a pulsating golden heart with solar flares shaped like flower petals,
+Planets connected by translucent, shimmering orbital threads. Mercury A cratered, airless world with extreme temperature swings,
+Venus A hellish environment with a runaway greenhouse effect and a thick, toxic atmosphere,
+Earth The only known planet with liquid surface water and life,
+Mars The "Red Planet," home to the largest volcano (Olympus Mons) and a thin carbon dioxide atmosphere,
+Jupiter The largest planet, featuring a massive magnetic field and the iconic Great Red Spot storm,
+Saturn's rings rendered as iridescent crystalline shards,
+Uranus A methane-rich planet that rotates on its side, likely due to an ancient massive collision, 
+Neptune The windiest planet in the system, appearing deep blue due to methane in its atmosphere,
+faint trail of stardust weaving between the celestial bodies
+planets rendered as intricate spheres of liquid glass and precious metals, the Sun at the center as a roaring core 
+of white-hot filigree, orbital paths visualized as glowing golden threads woven into a sacred geometry pattern, deep teal and violet nebula background with micro-star clusters, cinematic lighting, 8k resolution, ethereal atmosphere, style of Peter Mohrbacher and dynamic cosmic futurism."
+
+
+JSON prompt:
+{
+  "image_request": {
+    "subject": "The Solar System",
+    "style": "Surrealist Astral Futurism",
+    "composition": {
+      "perspective": "Wide-angle cinematic view from the Kuiper Belt looking inward",
+      "lighting": "Dramatic chiaroscuro; glowing planetary cores against a deep violet and obsidian nebula",
+      "elements": [
+        "Sun as a pulsating golden heart with solar flares shaped like flower petals",
+        "Planets connected by translucent, shimmering orbital threads",
+	"Mercury A cratered, airless world with extreme temperature swings"
+	"Venus A hellish environment with a runaway greenhouse effect and a thick, toxic atmosphere",
+	"Earth The only known planet with liquid surface water and life",
+        "Mars The "Red Planet," home to the largest volcano (Olympus Mons) and a thin carbon dioxide atmosphere",
+	"Jupiter The largest planet, featuring a massive magnetic field and the iconic Great Red Spot storm",
+        "Saturn's rings rendered as iridescent crystalline shards",
+	"Uranus A methane-rich planet that rotates on its side, likely due to an ancient massive collision", 
+	"Neptune The windiest planet in the system, appearing deep blue due to methane in its atmosphere",
+        "A faint trail of stardust weaving between the celestial bodies"
+      ]
+    },
+    "technical_specs": {
+      "aspect_ratio": "16:9",
+      "resolution": "8k",
+      "chaos_level": 20,
+      "stylize": 750,
+      "texture_detail": "High-definition liquid marble and metallic sheen"
+    },
+    "color_palette": [
+      "#0B0D17", 
+      "#FFD700", 
+      "#4B0082", 
+      "#00FFFF"
+    ],
+    "negative_prompt": "textbook illustration, blurry, low resolution, realistic nasa photo, white background, labels, 2D"
+  }
+}
