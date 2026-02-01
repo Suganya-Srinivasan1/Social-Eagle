@@ -1,0 +1,168 @@
+Gemini nano banana prompts:
+
+Leonardo.ai
+{
+  "prompt": "A cinematic, wide-angle shot of a vibrant blue Indian Railways train slowly traversing the historic Pamban cantilever bridge. The scene is set in Rameswaram, Tamil Nadu. On both sides, the infinite, crystal-clear turquoise ocean stretches to the horizon under a bright midday sun. The rusted iron textures of the bridge's engineering contrast with the shimmering water. High detail, 8k resolution, photorealistic, serene atmosphere, aerial drone perspective.",
+  "parameters": {
+    "aspect_ratio": "16:9",
+    "style": "photorealistic",
+    "lighting": "natural sunlight",
+    "negative_prompt": "land, mountains, trees, crowded, blurry, distorted architecture"
+  }
+}
+
+{
+  "action": "A cinematic, close-up shot of fresh white jasmine buds, skillful hands rhythmically stringing  with a thin orange thread. The background is a blurred, vibrant flower market (Madurai style) with heaps of marigolds and roses. The lighting is warm and early-morning natural light.",
+  "audio_cues": "The faint rustle of flower petals, the rhythmic 'snip' of thread, and a distant, muffled atmosphere of a bustling morning market with vendors calling out.",
+  "visual_style": "Macro photography, shallow depth of field, high saturation, 4k, realistic textures of the flower skin.",
+  "motion_speed": "Standard"
+}
+
+JSON
+{
+  "action": "A high-angle time-lapse of a woman's hand using white rice flour to draw a complex, symmetrical geometric Kolam pattern. The canvas is a dark, damp, cow-dung washed street. As the sun begins to rise, the lighting shifts from cool blue dawn to warm golden light.",
+  "audio_cues": "The soft, rhythmic scraping of fingertips against the ground, chirping of early morning birds, and a faint temple bell in the far distance.",
+  "visual_style": "Time-lapse, top-down perspective, high contrast between the white flour and the dark ground, cinematic lighting transition.",
+  "motion_speed": "Fast (time-lapse)"
+}
+
+{
+  "prompt": "A top-down cinematic sweeping shot of a traditional South Indian wedding feast served on a large, fresh green banana leaf. The spread includes a mound of steaming hot white rice topped with a dollop of ghee, surrounded by colorful portions of vegetable Poriyal, creamy Kootu, spicy Sambar, and a golden-brown crispy Vada. A large, circular Appalam rests on the side. The scene features visible rising steam, vibrant food textures, and a festive, authentic atmosphere with warm natural lighting.",
+  "video_settings": {
+    "resolution": "4k",
+    "motion": "slow_pan",
+    "duration": "10s",
+    "fps": 30
+  }
+}
+
+
+{
+  "subject": "Traditional South Indian Filter Coffee (Filter Kaapi)",
+  "composition": {
+    "vessels": "A classic brass tumbler nestled inside a matching brass davara (saucer bowl).",
+    "froth_details": "Extremely thick, airy, and velvety micro-foam (bubble froth) overflowing slightly at the rim; light tan color with tiny iridescent bubbles.",
+    "coffee_details": "Deep umber-colored coffee visible beneath the foam, showing a rich, oily texture."
+  },
+  "aesthetic": {
+    "lighting": "Soft, natural morning sunlight coming from the side to create deep shadows and bright highlights on the brass surface.",
+    "color_palette": "Warm golds, deep browns, and creamy beige; earthy tones.",
+    "mood": "Inviting, cozy, and authentic."
+  },
+  "environment": {
+    "surface": "A weathered dark wood table or a banana leaf placement.",
+    "background": "Minimalist and blurred (bokeh), suggesting a traditional Indian home or a heritage cafe."
+  },
+  "technical": {
+    "focus": "Macro lens photography; sharp focus on the texture of the bubbles and the reflection on the brass.",
+    "quality": "8k resolution, hyper-realistic, cinematic food styling."
+  }
+}
+
+
+{
+  "shot_sequence": [
+    {
+      "shot_type": "extreme_close_up",
+      "subject": "Salangai (Indian classical dance anklets)",
+      "action": "Golden brass bells tapping rhythmically on a polished wooden floor",
+      "visual_details": "Focus on the intricate thread of the bells, dust motes dancing in the light, high-contrast shadows, rhythmic footwork (Tatta Adavu)",
+      "camera_movement": "Static with shallow depth of field"
+    },
+    {
+      "shot_type": "cut_to_close_up",
+      "subject": "Dancer's face and hands",
+      "action": "Transition from rhythmic footwork to expressive Abhinaya and Mudras",
+      "visual_details": "Intense kohl-lined eyes moving in 'Netra Bheda', hands forming the 'Alapadma' (blooming lotus) gesture, traditional temple jewelry, vibrant silk costume",
+      "lighting": "Warm, dramatic stage lighting highlighting facial expressions",
+      "emotion": "Graceful, storytelling, divine energy"
+    }
+  ],
+  "technical_specs": {
+    "resolution": "4K",
+    "frame_rate": "24fps",
+    "style": "Cinematic realism",
+    "audio_cues": "Crisp rhythmic metallic jingling of bells followed by a subtle drone of a tanpura"
+  }
+}
+
+{
+  "action": "image_generation",
+  "aspect_ratio": "16:9",
+  "prompt": "Macro photography of a woman's hand, adorned with delicate gold bangles and henna patterns, tilting a small lit lamp to light a row of Agal vilakkus. Focus on the transition of the flame. The clay lamps show porous textures and oily surfaces; some wicks are fresh white while others are slightly charred. Intricate marigold and jasmine petals are scattered nearby on a damp stone floor. Soft golden hour light mixes with the blueish pre-dawn mist. High-speed photography capturing a tiny spark, hyper-detailed textures, 8k, photorealistic."
+}
+
+
+{
+  "prompt": "A cinematic wide drone shot slowly ascending to a low-angle static perspective of the Thanjavur Brihadeeswarar Temple vimana. The 216-foot granite tower is bathed in the warm, honey-hued glow of a late sunset. The intricate carvings and tiered stone textures are highly defined, showcasing the weathered golden-brown granite. In the background, a soft gradient sky of orange, violet, and deep blue. The scale is massive, emphasizing the 'Kumbam' apex against the horizon. Hyper-realistic, 8k resolution, architectural photography style, serene atmosphere.",
+  "parameters": {
+    "aspect_ratio": "16:9",
+    "lighting": "Golden hour, soft directional sunlight, long shadows",
+    "camera_movement": "Slow vertical crane / Drone ascent",
+    "shot_type": "Low-angle wide shot",
+    "color_palette": ["#FFB347", "#8B4513", "#4A90E2", "#FFD700"],
+    "fidelity": "High-detail stone masonry and relief carvings"
+  }
+}
+
+{
+  "prompt": "A majestic cinematic tilt-up shot of the Rajagopuram of the Sri Ranganathaswamy Temple in Srirangam. The camera starts at the massive, wide granite base and slowly pans vertically to reveal the 13 tiers of the 73-meter tall tower. The surface is densely packed with intricate stucco sculptures of the Dashavatara and Vaishnavite deities, painted in a vibrant 'Panchavarnam' color scheme. The shot concludes at the golden stupis at the summit, reaching into a crisp, clear blue sky. Hyper-realistic, 8k resolution, sharp architectural detail, high-contrast sunlight emphasizing the depth of the carvings.",
+  "scene_settings": {
+    "location": "Srirangam, Tiruchirappalli, India",
+    "subject": "Main Rajagopuram (Royal Gateway)",
+    "movement": "Slow-motion vertical tilt",
+    "lighting": "Golden hour sunlight casting deep relief shadows",
+    "composition": "Low-angle perspective to emphasize the record-breaking height"
+  },
+  "aesthetic_tags": [
+    "Dravidian Architecture",
+    "Vibrant Stucco Art",
+    "Grandeur",
+    "Spiritual Atmosphere",
+    "Ultra-HD",
+    "Cinematic Lighting"
+  ]
+}
+
+{
+  "action": "image_generation",
+  "input": {
+    "prompt": "A cinematic, wide-angle shot of the Thiruvalluvar Statue in Kanyakumari at sunrise. The massive stone monument stands majestically on its rocky island pedestal, 
+illuminated by the warm, golden glow of the early morning sun. In the background, the sky is a vibrant gradient of orange, pink, and deep purple. Powerful turquoise waves crash 
+against the base of the statue, creating dramatic white sea spray and mist. The surrounding Indian Ocean is vast and textured, reflecting the sunrise colors. Hyper-realistic detail, 
+high contrast, 8k resolution, serene yet powerful atmosphere.",
+    "aspect_ratio": "16:9"
+  }
+}
+
+A premium end frame in 16:9 aspect ratio featuring vibrant cheerful colour rich bright silky glossy fabric-textured background with subtle woven details text First line "That was a glimpse of"  second line"The Divine, Grand, Rhythm, Culture ,Flavour, Soul, Spirit, Land and Elements of TamilNadu" highlighting the word 'TamilNadu'.The
+background remains atic, rich bright silky glossy
+adding depth. High contrast, luxury mass-brand aesthetic, clean composition,
+perfect spacing for television and digital advertising.
+
+
+
+
+
+
+Google flow prompts: For converting frame to video
+
+The towering, colorful temple gateways are the most recognizable silhouette of Tamil Nadu A slow tilt-up shot of the 
+Brihadeeswarar Temple vimana (tower) at sunset, capturing its golden stone texture, transition to the close-up
+shot of the temple tower of Sri Ranganathaswamy Temple (Srirangam) revealing the intricate sculptures against a blue sky
+
+The Rhythm & The Art of Tamil Nadu depicted in A close-up shot of a hand lighting a row of clay oil lamps (Agal vilakku)
+transition to Focus on the Salangai (anklets) tapping rhythmically on the floor, then cut to the dancer’s expressive eyes 
+(Abhinaya) and hand gestures (Mudras).
+
+A time-lapse of a woman's hand drawing a complex white sikku Kolam on a damp, cow-dung washed street at dawn transition to
+Hands stringing white jasmine buds in a flower market 
+
+A slow-motion shot of the "metre coffee" pour—stretching the coffee between the stainless steel tumbler and davara to cool it down
+followed by A top-down shot of steaming white rice being served on a fresh green banana leaf, followed by colorful ladles of Sambar and Kootu.
+
+Begin from An aerial view to a close-up shot of The Thiruvalluvar Statue standing tall amidst the crashing waves at sunrise
+transition to A train slowly crossing the engineering marvel over the ocean Pamban bridge at Dhanuskodi Tamilnadu with the infinite blue ocean on both sides 
+
+Intense close-ups of the bull’s hump and the determined faces of the tamers, the bull jumping out fiercefully and tamers skillfully tackling the bull
+transition to the end card of video with each word zooming in and out finally focus on the word 'Tamilnadu'
