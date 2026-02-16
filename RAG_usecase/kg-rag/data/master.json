@@ -1,0 +1,52 @@
+[
+  {
+    "employee_id": "E001",
+    "full_name": "Sarah Chen",
+    "job_title": "Senior Software Engineer",
+    "department": "Engineering",
+    "location": "San Francisco",
+    "contact": {
+      "email": "sarah.chen@techcorp.com"
+    }
+  },
+  {
+    "employee_id": "E002",
+    "full_name": "Marcus Thorne",
+    "job_title": "Cloud Architect",
+    "department": "Infrastructure",
+    "location": "London",
+    "contact": {
+      "email": "m.thorne@techcorp.com"
+    }
+  },
+  {
+    "employee_id": "E003",
+    "full_name": "Elena Rodriguez",
+    "job_title": "Data Scientist",
+    "department": "Analytics",
+    "location": "Madrid",
+    "contact": {
+      "email": "e.rodriguez@techcorp.com"
+    }
+  },
+  {
+    "employee_id": "E004",
+    "full_name": "David Kim",
+    "job_title": "Security Lead",
+    "department": "Security",
+    "location": "Seoul",
+    "contact": {
+      "email": "d.kim@techcorp.com"
+    }
+  },
+  {
+    "employee_id": "E005",
+    "full_name": "Priya Das",
+    "job_title": "Frontend Developer",
+    "department": "Product",
+    "location": "Bangalore",
+    "contact": {
+      "email": "p.das@techcorp.com"
+    }
+  }
+]
