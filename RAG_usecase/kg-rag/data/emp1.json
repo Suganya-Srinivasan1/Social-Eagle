@@ -1,0 +1,30 @@
+[
+  {
+    "employee_id": "E011",
+    "skill_id": "Python",
+    "project_id": "P_PHOENIX",
+    "years_exp": 5,
+    "is_lead": true
+  },
+  {
+    "employee_id": "E021",
+    "skill_id": "Neo4j",
+    "project_id": "P_PHOENIX",
+    "years_exp": 3,
+    "is_lead": true
+  },
+  {
+    "employee_id": "E022",
+    "skill_id": "Python",
+    "project_id": "P_PHOENIX",
+    "years_exp": 2,
+    "is_lead": false
+  },
+  {
+    "employee_id": "E013",
+    "skill_id": "Java",
+    "project_id": "P_TITAN",
+    "years_exp": 4,
+    "is_lead": true
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "employee_id": "E016",
+    "skill_id": "Kubernetes",
+    "project_id": "P_CLOUD",
+    "years_exp": 0,
+    "is_lead": false
+  },
+  {
+    "employee_id": "E027",
+    "skill_id": "Python",
+    "project_id": "P_AI",
+    "years_exp": 10,
+    "is_lead": true
+  },
+  {
+    "employee_id": "E017",
+    "skill_id": "MachineLearning",
+    "project_id": "P_AI",
+    "years_exp": 8,
+    "is_lead": true
+  },
+  {
+    "employee_id": "E018",
+    "skill_id": "Neo4j",
+    "project_id": "P_GRAPH",
+    "years_exp": 2,
+    "is_lead": false
+  }
+]
