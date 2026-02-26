@@ -1,0 +1,45 @@
+Method1: Use Localhost n8n as we are using flask API in local host:
+Metod2: Download ngrok for executing Flask script from Selfhost
+give this grok server in POST server https://sidney-muciferous-unyieldingly.ngrok-free.dev in HTTP node
+
+Exec ngrok ->
+.\ngrok.exe <auth token from ngrok download page>
+.\ngork.exe http http://127.0.0.1:5000(Local machine server)
+Now our local Flask script get exposed to remote server as a deployment of our app online
+
+Prompt1:
+I want to write a python module using pyautogui to create a notepad socialeagle.txt in directory 'C:\Users\Hp\My_AI_works\n8n\UI_automation'.
+get the content to write into notepad as argument during runtime.
+search the directory for notepad named socialeagle.txt. 
+if notepad is not available in directory then create new notepad in the directory with name socialeagle.txt, add the content passed as argument during runtime into notepad
+and save using ctrl+s, 
+else open the existing notepad from directory and append the content passed during runtime as new line in the notepad
+Prompt2:
+convert the immediate above python code into flask API, get the input content to write into notepad as argument from payload
+
+From the flast converted python code:
+@app.route('/update-notepad', methods=['POST'])
+From the terminal:
+http://127.0.0.1:5000
+Chatgpt curl on flask conversion prompt:
+curl -X POST http://localhost:5000/update-notepad \
+     -H "Content-Type: application/json" \
+     -d '{"content": "This is a new line from the Flask API!"}'
+
+
+HTTP request node:
+	Method: POST
+	url : http://127.0.0.1:5000/update-notepad
+	Send Body : 
+		Name : From the curl - in this eg. the name is content
+		Value -> drag and drop Date&Time from previous Set node where we got current date & time from Javascript expression
+
+LLM chain:
+Source for prompt:
+Define below
+Prompt:
+{{ $json['Date&Time'] }} convert the input to below example format
+example:
+input - 2026-02-20 05:52:30
+expected - Feb 20th at 5:52 am IST
+Output only the converted rsult
