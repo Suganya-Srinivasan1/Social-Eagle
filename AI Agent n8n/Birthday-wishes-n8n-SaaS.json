@@ -1,0 +1,188 @@
+{
+  "name": "Saas 1",
+  "nodes": [
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $json.body.body.query }}",
+        "options": {
+          "systemMessage": "You will receive a sentence like:\n\n\"Send birthday wishes to Alex at alex@gmail.com\"\n\nYour job:\n\n1. Extract the name.\n2. Extract the email address.\n3. Write a warm birthday message (5–8 lines).\n\nYou MUST use the Gmail tool to send the email.\n\nWhen calling the Gmail tool, use:\n\nTo: extracted email\nSubject: 🎉 Happy Birthday [name]!\nMessage: generated birthday message\n\nDo not return JSON.\nDo not explain anything.\nJust call the Gmail tool."
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 3.1,
+      "position": [
+        0,
+        -112
+      ],
+      "id": "d19ed21f-a4d4-402b-975c-6090912a1b0d",
+      "name": "AI Agent"
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "value": "gpt-4.1-nano",
+          "mode": "id"
+        },
+        "builtInTools": {},
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.3,
+      "position": [
+        -176,
+        112
+      ],
+      "id": "99e939e1-e44d-4d36-b1e2-2f82ab93a078",
+      "name": "OpenAI Chat Model",
+      "credentials": {
+        "openAiApi": {
+          "id": "HeRlayENtDGTYVTQ",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "sendTo": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('To', ``, 'string') }}",
+        "subject": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Subject', ``, 'string') }}",
+        "message": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Message', ``, 'string') }}",
+        "options": {
+          "appendAttribution": false
+        }
+      },
+      "type": "n8n-nodes-base.gmailTool",
+      "typeVersion": 2.2,
+      "position": [
+        416,
+        64
+      ],
+      "id": "6ef49e20-a8f8-4a3d-9028-c558d69e1356",
+      "name": "Send a message in Gmail",
+      "webhookId": "75689549-db91-4466-8159-3108ad33b001",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "AG6akAs1aDYTlcta",
+          "name": "Gmail account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "first-agent",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2.1,
+      "position": [
+        -240,
+        -112
+      ],
+      "id": "90938dda-9021-4ccd-bf0d-ba5553e050a8",
+      "name": "Webhook",
+      "webhookId": "d1f2a023-4b76-4f3c-9317-5ae7e10b556e"
+    },
+    {
+      "parameters": {
+        "respondWith": "text",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.5,
+      "position": [
+        352,
+        -112
+      ],
+      "id": "05f182a4-b825-4827-af26-fb70df6f1f0d",
+      "name": "Respond to Webhook"
+    },
+    {
+      "parameters": {
+        "sessionIdType": "customKey",
+        "sessionKey": "global_memory"
+      },
+      "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
+      "typeVersion": 1.3,
+      "position": [
+        16,
+        96
+      ],
+      "id": "52a1fbf4-5195-43f4-a5be-920c60d068c7",
+      "name": "Simple Memory"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "OpenAI Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Send a message in Gmail": {
+      "ai_tool": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Agent": {
+      "main": [
+        [
+          {
+            "node": "Respond to Webhook",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Simple Memory": {
+      "ai_memory": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_memory",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate",
+    "availableInMCP": false
+  },
+  "versionId": "83835591-d342-4974-aeff-edc74f059642",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "42b04aa0512cb984af7028b150bcefb357406690202c00bf93cb4444d39dc32f"
+  },
+  "id": "Ni5Boc3VhCnqxebV",
+  "tags": []
+}
